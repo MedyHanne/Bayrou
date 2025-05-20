@@ -6,6 +6,13 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/Level/LVL_CrashTest.umap",
+				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/LVL_Nicolas.umap",
+				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"C:/Program Files/Epic Games/UE_5.4/Engine/Plugins/FX/Niagara/Content/DefaultAssets/Curves/Templates/SmoothRampUp.uasset",
+				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/Curve/AccelerationCurve.uasset",
+				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter1.uasset",
+				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonPawn.uasset",
+				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/ThirdPerson/Input/IMC_Default.uasset",
 				"E:/P2Medy/Unreal/bayrou/Content/ThirdPerson/Input/IMC_Default.uasset",
 				"E:/P2Medy/Unreal/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
 				"E:/P2Medy/Unreal/bayrou/Content/ThirdPerson/Input/Actions/IA_Slide.uasset",
