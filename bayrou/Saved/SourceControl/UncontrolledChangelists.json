@@ -1,0 +1,19 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"E:/P2Medy/Unreal/bayrou/Content/ThirdPerson/Input/IMC_Default.uasset",
+				"E:/P2Medy/Unreal/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"E:/P2Medy/Unreal/bayrou/Content/ThirdPerson/Input/Actions/IA_Slide.uasset",
+				"E:/P2Medy/Unreal/bayrou/Content/ThirdPerson/Input/Actions/IA_Projection.uasset",
+				"E:/P2Medy/Unreal/bayrou/Content/ThirdPerson/Input/Actions/IA_Run.uasset",
+				"E:/P2Medy/Unreal/bayrou/Content/Level/LVL_CrashTest.umap",
+				"E:/P2Medy/Unreal/bayrou/Content/ThirdPerson/Input/Actions/IA_Dash.uasset",
+				"E:/P2Medy/Unreal/bayrou/Content/BP/WB_WorldWidget.uasset"
+			]
+		}
+	]
+}
