@@ -5,16 +5,14 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/UI/Menu/UW_Menu1.uasset",
-				"C:/Program Files/Epic Games/UE_5.4/Engine/Content/EditorBlueprintResources/StandardMacros.uasset",
-				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/HUD/HUD_MainMenu.uasset",
-				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Fonts/TRIBTWO__Font.uasset",
-				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Fonts/TRIBTWO_.uasset",
-				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Fonts/TRIBAL___Font.uasset",
-				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Fonts/TRIBAL__.uasset",
-				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Sounds/Musics/Song_IntroMenu.uasset",
-				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Sounds/Effects/SE_HoveredButton.uasset",
-				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Sounds/Effects/SE_ClickButton.uasset"
+				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/BP/HUD/HUD_MainMenu.uasset",
+				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/Level/LVL_MainMenu.umap",
+				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/BP/UI/Menu/UW_Menu1.uasset",
+				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/BP/UI/Menu/UW_feedbackProjection.uasset",
+				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/BP/HUD/HUD_Player.uasset",
+				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/Level/LVL_CrashTest.umap",
+				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.uasset"
 			]
 		}
 	]
