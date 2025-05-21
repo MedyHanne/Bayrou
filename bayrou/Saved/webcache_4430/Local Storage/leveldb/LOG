@@ -1,2 +1,3 @@
-2025/05/21-09:26:28.143 452c Creating DB D:/Josua/ExoJosua/Bayrou/bayrou/Saved/webcache_4430\Local Storage\leveldb since it was missing.
-2025/05/21-09:26:28.232 452c Reusing MANIFEST D:/Josua/ExoJosua/Bayrou/bayrou/Saved/webcache_4430\Local Storage\leveldb/MANIFEST-000001
+2025/05/21-12:27:30.198 65c Reusing MANIFEST D:/Josua/ExoJosua/Bayrou/bayrou/Saved/webcache_4430\Local Storage\leveldb/MANIFEST-000001
+2025/05/21-12:27:30.199 65c Recovering log #3
+2025/05/21-12:27:30.199 65c Reusing old log D:/Josua/ExoJosua/Bayrou/bayrou/Saved/webcache_4430\Local Storage\leveldb/000003.log 
