@@ -5,7 +5,25 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+<<<<<<< HEAD
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Images/BG_TigerWhite.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Images/a-vibrant-cartoon-style-illustration-of-_odhnq9g5QmGYk6RDFxqX0w_old-aWzgQLGjQYawXslDMw__1_.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/UI/WB_WorldWidget.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/GameMode/GM_Menu.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/GameMode/GM_Game.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/HUD/HUD_MainMenu.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Level/LVL_MainMenu.umap",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/GameMode/GM_MainMenu.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/UI/Menu/UW_Menu1.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Level/LVL_Mechanics.umap",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/UI/Menu/UW_Menu.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Images/BG_TigerWhite2.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/WB_WorldWidget.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/HUD_MainMenu.uasset",
+=======
 				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/Level/LVL_CrashTest.umap",
+<<<<<<< HEAD
 				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/LVL_Nicolas.umap",
 				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
 				"C:/Program Files/Epic Games/UE_5.4/Engine/Plugins/FX/Niagara/Content/DefaultAssets/Curves/Templates/SmoothRampUp.uasset",
@@ -13,6 +31,9 @@
 				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter1.uasset",
 				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonPawn.uasset",
 				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/ThirdPerson/Input/IMC_Default.uasset",
+=======
+>>>>>>> main
+>>>>>>> Josua
 				"E:/P2Medy/Unreal/bayrou/Content/ThirdPerson/Input/IMC_Default.uasset",
 				"E:/P2Medy/Unreal/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
 				"E:/P2Medy/Unreal/bayrou/Content/ThirdPerson/Input/Actions/IA_Slide.uasset",
