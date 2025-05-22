@@ -32,7 +32,7 @@ void ATeleporter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Ot
             FVector _targetLocation = target->GetActorLocation();
             FRotator _targetRotation = target->GetActorRotation();
             characterRef->SetActorLocationAndRotation(_targetLocation, _targetRotation);
-            isActivated = false;
+            //isActivated = false;
         }
     }
 }
