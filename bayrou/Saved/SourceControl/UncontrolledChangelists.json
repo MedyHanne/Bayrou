@@ -5,6 +5,10 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"E:/P2Medy/Unreal/GitHubBayrou/Bayrou/bayrou/Content/BP/IA/Component/FearDetecter.uasset",
+				"E:/P2Medy/Unreal/GitHubBayrou/Bayrou/bayrou/Content/BP/IA/BP_IA_Spirit.uasset",
+				"E:/P2Medy/Unreal/GitHubBayrou/Bayrou/bayrou/Content/BP/IA/Component/BP_PathFollowingComponent.uasset",
+				"E:/P2Medy/Unreal/GitHubBayrou/Bayrou/bayrou/Content/Level/LVL_Medy.umap",
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/UI/Menu/UW_Menu1.uasset",
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/HUD/HUD_MainMenu.uasset",
