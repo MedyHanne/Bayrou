@@ -6,7 +6,12 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/HUD/HUD_MainMenu.uasset",
-				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset"
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Level/LVL_CrashTest.umap",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/UI/Menu/UW_Menu1.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_JosuaThirdPersonCharacter.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Level/LVL_MainMenu.umap"
 			]
 		}
 	]
