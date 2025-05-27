@@ -11,7 +11,8 @@
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.uasset",
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/UI/Menu/UW_Menu1.uasset",
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_JosuaThirdPersonCharacter.uasset",
-				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Level/LVL_MainMenu.umap"
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Level/LVL_MainMenu.umap",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/ThirdPerson/Input/IMC_Default.uasset"
 			]
 		}
 	]
