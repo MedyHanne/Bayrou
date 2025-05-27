@@ -5,6 +5,9 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"D:/ProjetUnreal/Bayrou/bayrou/Content/Level/LVL_MainMenu.umap",
+				"D:/ProjetUnreal/Bayrou/bayrou/Content/BP/GPE/BP_ConfusiusRetreat.uasset",
+				"D:/ProjetUnreal/Bayrou/bayrou/Content/Level/LVL_Raph.umap",
 				"C:/Program Files/Epic Games/UE_5.4/Engine/Content/EngineSounds/Master.uasset",
 				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/BP/HUD/HUD_MainMenu.uasset",
 				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/Level/LVL_MainMenu.umap",
