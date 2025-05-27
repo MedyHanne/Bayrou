@@ -11,6 +11,8 @@ UCLASS()
 class BAYROU_API AConfusiusRetreat : public AActor
 {
 	GENERATED_BODY()
+
+	//DECLARE_DYNAMIC_MULTICAST_DELEGATE
 protected:
 	UPROPERTY(EditAnywhere) TObjectPtr<UStaticMeshComponent> mesh = nullptr;
 	UPROPERTY(EditAnywhere) FText name;

@@ -27,7 +27,7 @@ void AConfusiusRetreat::Tick(float DeltaTime)
 void AConfusiusRetreat::Reward(ACharacter* _player)
 {
 	//Add to the place where i can read the information (ui)
-
+	// add an event in reward BLUE PRINT 
 	Destroy();
 }
 

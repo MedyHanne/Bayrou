@@ -1,2 +1,5 @@
-[0522/181611.405:WARNING:value_store_frontend.cc(45)] Reading mhjfbmdgcfjbbpaeojofohoefgiehjai.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[0522/181810.161:ERROR:gpu_init.cc(426)] Passthrough is not supported, GL is disabled
+[0527/141000.905:ERROR:os_crypt_win.cc(93)] Failed to decrypt: Key not valid for use in specified state. (0x8009000B)
+[0527/141003.140:WARNING:value_store_frontend.cc(45)] Reading mhjfbmdgcfjbbpaeojofohoefgiehjai.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[0527/141006.048:WARNING:spdy_session.cc(3431)] Received HEADERS for invalid stream 27
+[0527/141006.056:WARNING:spdy_session.cc(3431)] Received HEADERS for invalid stream 57
+[0527/141201.185:ERROR:gpu_init.cc(426)] Passthrough is not supported, GL is disabled
