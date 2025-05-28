@@ -11,10 +11,11 @@ UCLASS()
 class BAYROU_API UJadeChallengeWidget : public UUserWidget
 {
 	GENERATED_BODY()
-	UPROPERTY(EditAnywhere, meta = (BindWidget)) TObjectPtr<UImage> timeLimitImage;
-	UPROPERTY(EditAnywhere, meta = (BindWidget)) TObjectPtr<UImage> currentTimeImage;
-	UPROPERTY(EditAnywhere, meta = (BindWidget)) TObjectPtr<UTextBlock> timeLimitText;
-	UPROPERTY(EditAnywhere, meta = (BindWidget)) TObjectPtr<UTextBlock> currentTimeText;
+protected:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget)) TObjectPtr<UImage> timeLimitImage;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget)) TObjectPtr<UImage> currentTimeImage;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget)) TObjectPtr<UTextBlock> timeLimitText;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget)) TObjectPtr<UTextBlock> currentTimeText;
 public:
 	FORCEINLINE TObjectPtr<UImage> GetTimeLimitImage() { return timeLimitImage; }
 	FORCEINLINE TObjectPtr<UImage> GetCurrentTimeImage() { return currentTimeImage; }
