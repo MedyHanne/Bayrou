@@ -7,6 +7,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "EndZone.h"
 #include "GameFramework/Character.h"
+#include "Player_HUD.h"
 
 AChallengeOfJade::AChallengeOfJade()
 {
@@ -41,7 +42,7 @@ void AChallengeOfJade::ChallengeFailed()
 	}
 
 	SetMeshCollision(ECollisionResponse::ECR_Overlap);
-	//jadeChallengeWidget->SetVisibility(ESlateVisibility::Hidden);
+	jadeChallengeWidget->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void AChallengeOfJade::Init()
@@ -56,7 +57,7 @@ void AChallengeOfJade::Init()
 		_platform->SetActorHiddenInGame(true);
 	}
 
-	/*if (!jadeChallengeWidget)
+	if (!jadeChallengeWidget)
 	{
 		FTimerHandle _timer;
 		GetWorld()->GetTimerManager().SetTimer(_timer, [&]()
@@ -74,7 +75,7 @@ void AChallengeOfJade::Init()
 				winPopupWidget = GetMainWidget()->GetWinPopupWidget();
 			},
 			0.2f, false);
-	}*/
+	}
 }
 
 void AChallengeOfJade::UpdateTime(float _deltaTime)
@@ -86,7 +87,7 @@ void AChallengeOfJade::UpdateTime(float _deltaTime)
 		ChallengeFailed();
 	}
 	FString _time = FString::FromInt(currentTime) + "s";
-	//jadeChallengeWidget->SetCurrentTimetText(FText::FromString(_time));
+	jadeChallengeWidget->SetCurrentTimetText(FText::FromString(_time));
 }
 
 void AChallengeOfJade::ChallengeSucceeded(AActor* _player)
@@ -101,11 +102,11 @@ void AChallengeOfJade::ChallengeSucceeded(AActor* _player)
 		{
 			_platform->SetActorHiddenInGame(true);
 		}
-		/*jadeChallengeWidget->SetVisibility(ESlateVisibility::Hidden);
+		jadeChallengeWidget->SetVisibility(ESlateVisibility::Hidden);
 		winPopupWidget->SetVisibility(ESlateVisibility::Visible);
 		FTimerHandle _timer;
 
-		GetWorld()->GetTimerManager().SetTimer(_timer, [&]() {winPopupWidget->SetVisibility(ESlateVisibility::Hidden); }, 4.0f, false);*/
+		GetWorld()->GetTimerManager().SetTimer(_timer, [&]() {winPopupWidget->SetVisibility(ESlateVisibility::Hidden); }, 4.0f, false);
 		//endZone->SetIsActive(false);
 
 		//Add the life here
@@ -141,12 +142,12 @@ void AChallengeOfJade::NotifyActorBeginOverlap(AActor* OtherActor)
 	if (_player)
 	{
 		raceStarted = true;
-		/*if (jadeChallengeWidget)
+		if (jadeChallengeWidget)
 		{
 			FString _limit = FString::FromInt(timeLimit) + "s";
 			jadeChallengeWidget->SetTimeLimitText(FText::FromString(_limit));
 			jadeChallengeWidget->SetVisibility(ESlateVisibility::Visible);
-		}*/
+		}
 		currentTime = 0.0f;
 		SetMaterial(onGoingMat);
 		endZone->SetIsActive(true);
@@ -165,14 +166,14 @@ void AChallengeOfJade::SetMeshCollision(ECollisionResponse _rep)
 	mesh->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, _rep);
 }
 
-//UMainWidget* AChallengeOfJade::GetMainWidget()
-//{
-//	ACharacter* _player = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
-//	if (!_player) return nullptr;
-//	APlayerController* _playerController = Cast<APlayerController>(_player->GetController());
-//	if (!_playerController) return nullptr;
-//	APlayer_HUD* _HUD = Cast< APlayer_HUD>(_playerController->GetHUD());
-//	if (!_HUD)return nullptr;
-//	return _HUD->GetMainWidget();
-//}
+UMainWidget* AChallengeOfJade::GetMainWidget()
+{
+	ACharacter* _player = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
+	if (!_player) return nullptr;
+	APlayerController* _playerController = Cast<APlayerController>(_player->GetController());
+	if (!_playerController) return nullptr;
+	APlayer_HUD* _HUD = Cast< APlayer_HUD>(_playerController->GetHUD());
+	if (!_HUD)return nullptr;
+	return _HUD->GetMainWidget();
+}
 

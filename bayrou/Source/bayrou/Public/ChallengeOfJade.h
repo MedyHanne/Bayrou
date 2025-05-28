@@ -2,6 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "MainWidget.h"
 #include "ChallengeOfJade.generated.h"
 
 class UBoxComponent;
@@ -16,8 +17,8 @@ class BAYROU_API AChallengeOfJade : public AActor
 protected:
     UPROPERTY(EditAnywhere) TObjectPtr<UStaticMeshComponent> mesh;
     UPROPERTY(EditAnywhere, BlueprintReadWrite) TObjectPtr<AEndZone> endZone;
-    /*UPROPERTY(EditAnywhere) TObjectPtr<UJadeChallengeWidget> jadeChallengeWidget = nullptr;
-    UPROPERTY(EditAnywhere) TObjectPtr<UWinPopupWidget> winPopupWidget = nullptr;*/
+    UPROPERTY(EditAnywhere) TObjectPtr<UJadeChallengeWidget> jadeChallengeWidget = nullptr;
+    UPROPERTY(EditAnywhere) TObjectPtr<UWinPopupWidget> winPopupWidget = nullptr;
     UPROPERTY(EditAnywhere, BlueprintReadWrite) float timeLimit = 10.0f;
     UPROPERTY(EditAnywhere) TObjectPtr<UMaterial> mat;
     UPROPERTY(EditAnywhere) TObjectPtr<UMaterial> onGoingMat;
@@ -57,6 +58,6 @@ private:
     UFUNCTION()void OnPlayerReachEnd(AActor* _overlappedActor);
     virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
     void SetMeshCollision(ECollisionResponse _rep);
-    //UMainWidget* GetMainWidget();
+    UMainWidget* GetMainWidget();
 
 };
