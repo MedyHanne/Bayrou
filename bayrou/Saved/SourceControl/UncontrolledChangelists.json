@@ -5,6 +5,13 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"D:/ProjetUnreal/Bayrou/bayrou/Content/BP/GPE/BP_SpiritualArtefact.uasset",
+				"D:/ProjetUnreal/Bayrou/bayrou/Content/Level/LVL_CrashTest.umap",
+				"D:/ProjetUnreal/Bayrou/bayrou/Content/BP/GPE/BP_SpiritualNode.uasset",
+				"D:/ProjetUnreal/Bayrou/bayrou/Content/BP/GPE/Sound/SA_NodeAttenuation.uasset",
+				"D:/UE_5.4/Engine/Content/VREditor/Sounds/UI/Foliage_Placed.uasset",
+				"D:/ProjetUnreal/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.uasset",
+				"D:/ProjetUnreal/Bayrou/bayrou/Content/BP/GPE/BP_ChallengeOfJade.uasset",
 				"C:/Program Files/Epic Games/UE_5.4/Engine/Content/EngineSounds/Master.uasset",
 				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/BP/HUD/HUD_MainMenu.uasset",
 				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/Level/LVL_MainMenu.umap",

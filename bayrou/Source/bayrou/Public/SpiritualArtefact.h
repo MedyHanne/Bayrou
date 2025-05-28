@@ -2,6 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include <Components/SphereComponent.h>
 #include "SpiritualArtefact.generated.h"
 
 class ASpiritualNode;
@@ -21,6 +22,12 @@ protected:
 	UPROPERTY(EditAnywhere) int maxCount = 3;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) bool canBeRecover;
 
+	UPROPERTY(EditAnywhere) FString name;
+
+	UPROPERTY(EditAnywhere) TObjectPtr<USphereComponent> interactionZone;
+	UPROPERTY(EditAnywhere) float interactionDistance = 200.0f;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)bool isPlayerInRange = false;
+
 public:
 	FORCEINLINE FOnStopNS& OnStopNS() { return onStopNS; }
 	FORCEINLINE FOnOpenDoor& OnOpenDoor() { return onOpenDoor; }
@@ -38,7 +45,9 @@ public:
 	void AddNode(ASpiritualNode* _nodeToAdd);
 	void RemoveDestroyedNode(ASpiritualNode* _nodeToAdd);
 private:
-	virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
+	//virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
 	void CheckRecover();
+	void Reward(ACharacter* _player);
+	void Check();
 
 };
