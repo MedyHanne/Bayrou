@@ -13,7 +13,15 @@
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_JosuaThirdPersonCharacter.uasset",
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Level/LVL_MainMenu.umap",
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/ThirdPerson/Input/IMC_Default.uasset",
-				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/Obstavcle/Obstacle.uasset"
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/Obstavcle/Obstacle.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/CurveVector1.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Sounds/Effects/SE_WindDodge.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/ThirdPerson/Input/Actions/IA_Debug.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/CurveFOV.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Animation/Female_Locomotion_Pose.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Animation/Female_Locomotion_Pose1.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Animation/SlideAnimation.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/NewCurveBase.uasset"
 			]
 		}
 	]
