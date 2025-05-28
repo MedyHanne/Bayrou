@@ -7,14 +7,13 @@
 #include "Kismet/GameplayStatics.h"
 #include "EndZone.h"
 #include "GameFramework/Character.h"
+#include "Player_HUD.h"
 
 AChallengeOfJade::AChallengeOfJade()
 {
 	PrimaryActorTick.bCanEverTick = true;
-
-	startTrigger = CreateDefaultSubobject<UBoxComponent>("StartTrigger");
-	RootComponent = startTrigger;
-	startTrigger->OnComponentBeginOverlap.AddDynamic(this, &AChallengeOfJade::OnPlayerEnterStart);
+	mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
+	RootComponent = mesh;
 }
 
 void AChallengeOfJade::BeginPlay()
@@ -41,6 +40,9 @@ void AChallengeOfJade::ChallengeFailed()
 	{
 		_platform->SetActorHiddenInGame(true);
 	}
+
+	SetMeshCollision(ECollisionResponse::ECR_Overlap);
+	jadeChallengeWidget->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void AChallengeOfJade::Init()
@@ -54,11 +56,38 @@ void AChallengeOfJade::Init()
 	{
 		_platform->SetActorHiddenInGame(true);
 	}
+
+	if (!jadeChallengeWidget)
+	{
+		FTimerHandle _timer;
+		GetWorld()->GetTimerManager().SetTimer(_timer, [&]()
+			{
+				jadeChallengeWidget = GetMainWidget()->GetJadeChallengeWidget();
+			},
+			0.2f, false);
+	}
+
+	if (!winPopupWidget)
+	{
+		FTimerHandle _timer;
+		GetWorld()->GetTimerManager().SetTimer(_timer, [&]()
+			{
+				winPopupWidget = GetMainWidget()->GetWinPopupWidget();
+			},
+			0.2f, false);
+	}
 }
 
 void AChallengeOfJade::UpdateTime(float _deltaTime)
 {
 	currentTime += _deltaTime;
+	if (currentTime > timeLimit)
+	{
+		raceStarted = false;
+		ChallengeFailed();
+	}
+	FString _time = FString::FromInt(currentTime) + "s";
+	jadeChallengeWidget->SetCurrentTimetText(FText::FromString(_time));
 }
 
 void AChallengeOfJade::ChallengeSucceeded(AActor* _player)
@@ -73,6 +102,11 @@ void AChallengeOfJade::ChallengeSucceeded(AActor* _player)
 		{
 			_platform->SetActorHiddenInGame(true);
 		}
+		jadeChallengeWidget->SetVisibility(ESlateVisibility::Hidden);
+		winPopupWidget->SetVisibility(ESlateVisibility::Visible);
+		FTimerHandle _timer;
+
+		GetWorld()->GetTimerManager().SetTimer(_timer, [&]() {winPopupWidget->SetVisibility(ESlateVisibility::Hidden); }, 4.0f, false);
 		//endZone->SetIsActive(false);
 
 		//Add the life here
@@ -83,35 +117,37 @@ void AChallengeOfJade::ChallengeSucceeded(AActor* _player)
 void AChallengeOfJade::SetMaterial(UMaterial* _mat)
 {
 	if (!_mat) return;
-
-	if (right)
-	{
-		UStaticMeshComponent* _mesh = right->FindComponentByClass<UStaticMeshComponent>();
-		if (_mesh)
-		{
-			_mesh->SetMaterial(0, _mat);
-		}
-	}
-
-	if (left)
-	{
-		UStaticMeshComponent* _mesh = left->FindComponentByClass<UStaticMeshComponent>();
-		if (_mesh)
-		{
-			_mesh->SetMaterial(0, _mat);
-		}
-	}
+	mesh->SetMaterial(0, _mat);
 }
 
-void AChallengeOfJade::OnPlayerEnterStart(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+
+void AChallengeOfJade::OnPlayerReachEnd(AActor* _overlappedActor)
 {
-	if (raceStarted || raceCompleted)return;
+	if (!raceStarted) return;
+	raceStarted = false;
+
+	//Check if the player pass the end before the time => Win or after => Loose
+	if (HasWin())
+		ChallengeSucceeded(_overlappedActor);
+
+	endZone->SetIsActive(false);
+}
+
+void AChallengeOfJade::NotifyActorBeginOverlap(AActor* OtherActor)
+{
+	if (raceStarted || raceCompleted || !isPlayerDashing)return;
 	if (!OtherActor)return;
 	ACharacter* _player = Cast< ACharacter>(OtherActor);
 
 	if (_player)
 	{
 		raceStarted = true;
+		if (jadeChallengeWidget)
+		{
+			FString _limit = FString::FromInt(timeLimit) + "s";
+			jadeChallengeWidget->SetTimeLimitText(FText::FromString(_limit));
+			jadeChallengeWidget->SetVisibility(ESlateVisibility::Visible);
+		}
 		currentTime = 0.0f;
 		SetMaterial(onGoingMat);
 		endZone->SetIsActive(true);
@@ -120,21 +156,24 @@ void AChallengeOfJade::OnPlayerEnterStart(UPrimitiveComponent* OverlappedComp, A
 		{
 			_platform->SetActorHiddenInGame(false);
 		}
+		FTimerHandle _timer;
+		GetWorld()->GetTimerManager().SetTimer(_timer, [&]() {SetMeshCollision(ECollisionResponse::ECR_Block); }, 1.0f, false);
 	}
 }
 
-void AChallengeOfJade::OnPlayerReachEnd(AActor* _overlappedActor)
+void AChallengeOfJade::SetMeshCollision(ECollisionResponse _rep)
 {
-	if (!raceStarted) return;
-	raceStarted = false;
-	//raceCompleted = true;
+	mesh->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, _rep);
+}
 
-	//Check if the player pass the end before the time => Win or after => Loose
-	if (HasWin())
-		ChallengeSucceeded(_overlappedActor);
-	else
-		ChallengeFailed();
-
-	endZone->SetIsActive(false);
+UMainWidget* AChallengeOfJade::GetMainWidget()
+{
+	ACharacter* _player = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
+	if (!_player) return nullptr;
+	APlayerController* _playerController = Cast<APlayerController>(_player->GetController());
+	if (!_playerController) return nullptr;
+	APlayer_HUD* _HUD = Cast< APlayer_HUD>(_playerController->GetHUD());
+	if (!_HUD)return nullptr;
+	return _HUD->GetMainWidget();
 }
 
