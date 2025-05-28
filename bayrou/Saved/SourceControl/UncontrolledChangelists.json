@@ -5,6 +5,10 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Program Files/Epic Games/UE_5.4/Engine/Content/EngineSounds/Master.uasset",
+				"C:/Unreal/Bayrou/bayrou/Content/BP/GPE/New/BP_NewSpiritualNode.uasset",
+				"C:/Unreal/Bayrou/bayrou/Content/Level/LVL_Raph.umap",
+				"C:/Unreal/Bayrou/bayrou/Content/BP/GPE/New/BP_NewSpiritualArtefact.uasset",
 				"D:/ProjetUnreal/Bayrou/bayrou/Content/BP/GPE/BP_SpiritualArtefact.uasset",
 				"D:/ProjetUnreal/Bayrou/bayrou/Content/Level/LVL_CrashTest.umap",
 				"D:/ProjetUnreal/Bayrou/bayrou/Content/BP/GPE/BP_SpiritualNode.uasset",
@@ -26,7 +30,6 @@
 				"D:/ProjetUnreal/Bayrou/bayrou/Content/BP/GPE/New/BP_NewSpiritualNode.uasset",
 				"D:/ProjetUnreal/Bayrou/bayrou/Content/BP/GPE/New/BP_NewSpiritualArtefact.uasset",
 				"D:/ProjetUnreal/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_RaphThPersonCharacter.uasset",
-				"C:/Program Files/Epic Games/UE_5.4/Engine/Content/EngineSounds/Master.uasset",
 				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/BP/HUD/HUD_MainMenu.uasset",
 				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/Level/LVL_MainMenu.umap",
 				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/BP/UI/Menu/UW_Menu1.uasset",
