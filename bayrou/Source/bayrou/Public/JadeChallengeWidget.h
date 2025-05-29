@@ -26,7 +26,7 @@ protected:
 	virtual void NativeConstruct() override;
 
 public:
-	void SetTimeLimitText(FText _text);
-	void SetCurrentTimetText(FText _text);
+	UFUNCTION(BlueprintCallable) void SetTimeLimitText(FString _text);
+	UFUNCTION(BlueprintCallable) void SetCurrentTimetText(FString _text);
 	
 };

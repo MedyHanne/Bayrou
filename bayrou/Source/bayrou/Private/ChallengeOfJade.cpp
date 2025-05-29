@@ -87,7 +87,8 @@ void AChallengeOfJade::UpdateTime(float _deltaTime)
 		ChallengeFailed();
 	}
 	FString _time = FString::FromInt(currentTime) + "s";
-	jadeChallengeWidget->SetCurrentTimetText(FText::FromString(_time));
+	//jadeChallengeWidget->SetCurrentTimetText(FText::FromString(_time));
+	jadeChallengeWidget->SetCurrentTimetText(_time);
 }
 
 void AChallengeOfJade::ChallengeSucceeded(AActor* _player)
@@ -145,7 +146,7 @@ void AChallengeOfJade::NotifyActorBeginOverlap(AActor* OtherActor)
 		if (jadeChallengeWidget)
 		{
 			FString _limit = FString::FromInt(timeLimit) + "s";
-			jadeChallengeWidget->SetTimeLimitText(FText::FromString(_limit));
+			jadeChallengeWidget->SetTimeLimitText(_limit);
 			jadeChallengeWidget->SetVisibility(ESlateVisibility::Visible);
 		}
 		currentTime = 0.0f;

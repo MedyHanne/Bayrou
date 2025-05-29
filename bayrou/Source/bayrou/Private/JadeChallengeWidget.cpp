@@ -5,13 +5,13 @@ void UJadeChallengeWidget::NativeConstruct()
 	Super::NativeConstruct();
 }
 
-void UJadeChallengeWidget::SetTimeLimitText(FText _text)
+void UJadeChallengeWidget::SetTimeLimitText(FString _text)
 {
-	timeLimitText->SetText(_text);
+	timeLimitText->SetText(FText::FromString(_text));
 }
 
-void UJadeChallengeWidget::SetCurrentTimetText(FText _text)
+void UJadeChallengeWidget::SetCurrentTimetText(FString _text)
 {
-	currentTimeText->SetText(_text);
+	currentTimeText->SetText(FText::FromString(_text));
 }
 
