@@ -10,7 +10,11 @@
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/GPE/New/BP_NewConfusiusRetreat.uasset",
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Images/Parchemin.uasset",
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.uasset",
-				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/UI/GPE/UW_GetConfusius.uasset"
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/UI/GPE/UW_GetConfusius.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Level/LVL_CrashTest.umap",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/UI/Player/NewBlueprint.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/UI/Player/Inventory.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/UI/Player/UW_Inventory.uasset"
 			]
 		}
 	]
