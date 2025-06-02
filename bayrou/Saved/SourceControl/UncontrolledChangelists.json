@@ -5,6 +5,11 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"E:/P2Medy/Unreal/GitHubBayrou/Bayrou/bayrou/Content/ThirdPerson/Input/Actions/IA_Agility.uasset",
+				"E:/P2Medy/Unreal/GitHubBayrou/Bayrou/bayrou/Content/ThirdPerson/Input/IMC_Default.uasset",
+				"E:/P2Medy/Unreal/GitHubBayrou/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_MedyThirdPersonCharacter.uasset",
+				"E:/P2Medy/Unreal/GitHubBayrou/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.uasset",
+				"E:/P2Medy/Unreal/GitHubBayrou/Bayrou/bayrou/Content/ThirdPerson/Input/Actions/IA_Drift.uasset",
 				"D:/ProjetUnreal/Bayrou/bayrou/Content/BP/GPE/BP_SpiritualArtefact.uasset",
 				"D:/ProjetUnreal/Bayrou/bayrou/Content/Level/LVL_CrashTest.umap",
 				"D:/ProjetUnreal/Bayrou/bayrou/Content/BP/GPE/BP_SpiritualNode.uasset",
