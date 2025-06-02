@@ -21,6 +21,15 @@
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Animation/Female_Locomotion_Pose.uasset",
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Animation/Female_Locomotion_Pose1.uasset",
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Animation/SlideAnimation.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/Obstacles/Obstacle.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/Obstacles/WoodBox.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Fab/wood_box/Material_001.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Fab/wood_box/wood_box.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Fab/wood_box/wood_box_texture_0.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Fab/wood_box/wood_box_texture_1.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Fab/wood_box/wood_box_texture_2.uasset",
+				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/ReverseCurveFOV.uasset",
+				"C:/Program Files/Epic Games/UE_5.4/Engine/Content/EditorBlueprintResources/StandardMacros.uasset",
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/NewCurveBase.uasset"
 			]
 		}
