@@ -35,6 +35,7 @@ void ASpiritualArtefact::AddNode(ASpiritualNode* _nodeToAdd)
 {
 	if (!_nodeToAdd || nodesToDestroy.Contains(_nodeToAdd))return;
 	if (!CanAdd())return;
+	//_nodeToAdd->SetSpiritualArtefact(this); !!!!!!!!!!!!!!!!!!!!
 	nodesToDestroy.Add(_nodeToAdd);
 }
 

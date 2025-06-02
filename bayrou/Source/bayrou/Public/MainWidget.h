@@ -13,8 +13,9 @@ class BAYROU_API UMainWidget : public UUserWidget
 {
 	GENERATED_BODY()
 	UPROPERTY(EditAnywhere) TObjectPtr<ACharacter> playerRef = nullptr;
-	UPROPERTY(meta = (BindWidget)) TObjectPtr<UJadeChallengeWidget> jadeChallengeWidget;
-	UPROPERTY(meta = (BindWidget)) TObjectPtr<UWinPopupWidget> winPopupWidget;
+protected:
+	UPROPERTY(BlueprintReadWrite, meta = (BindWidget)) TObjectPtr<UJadeChallengeWidget> jadeChallengeWidget;
+	UPROPERTY(BlueprintReadWrite, meta = (BindWidget)) TObjectPtr<UWinPopupWidget> winPopupWidget;
 
 public:
 	FORCEINLINE TObjectPtr<UJadeChallengeWidget> GetJadeChallengeWidget() { return jadeChallengeWidget; }
