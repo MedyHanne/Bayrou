@@ -8,6 +8,16 @@ ASpiritualNode::ASpiritualNode()
 	RootComponent = CreateDefaultSubobject<USceneComponent>("Root");
 	mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
 	RootComponent = mesh;
+
+	glowLight = CreateDefaultSubobject<UPointLightComponent>("GlowLight");
+	glowLight->SetupAttachment(mesh);
+	glowLight->SetRelativeLocation(FVector(0.f, 0.f, 100.f));
+	glowLight->SetIntensity(30.0f);
+	glowLight->SetLightColor(FLinearColor::Green);
+	glowLight->SetAttenuationRadius(500.0f);
+	glowLight->bUseInverseSquaredFalloff = false;
+	glowLight->SetMobility(EComponentMobility::Movable);
+	glowLight->SetCastShadows(false);
 }
 
 void ASpiritualNode::BeginPlay()

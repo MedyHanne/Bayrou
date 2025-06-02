@@ -2,6 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include <Components/PointLightComponent.h>
 #include "SpiritualNode.generated.h"
 
 class ASpiritualArtefact;
@@ -16,6 +17,8 @@ protected:
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) TObjectPtr<UStaticMeshComponent> mesh = nullptr;
 	UPROPERTY(EditAnywhere) TObjectPtr< ASpiritualArtefact> artefactRef;
+
+	UPROPERTY(EditAnywhere) TObjectPtr<UPointLightComponent> glowLight;
 public:
 	FORCEINLINE FOnNodeDestroyed& OnNodeDestroyed() { return onNodeDestroyed; }
 
