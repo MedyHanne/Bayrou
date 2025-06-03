@@ -1054,3 +1054,20 @@ _MatTransl_3B7A55D3409170328211A060FC2E3BB1E263C720_BBD650804D314CE7A44ADF9BB4F3
 [2025.06.03-07.02.21:943][609]LogDemo: Cleaned up 0 splitscreen connections, owner deletion: enabled
 [2025.06.03-07.02.21:960][609]LogExit: Editor shut down
 [2025.06.03-07.02.21:962][609]LogExit: Transaction tracking system shut down
+[2025.06.03-07.02.22:116][609]LogExit: Object subsystem successfully closed.
+[2025.06.03-07.02.22:157][609]LogShaderCompilers: Display: Shaders left to compile 0
+[2025.06.03-07.02.23:456][609]MemoryProfiler: Shutdown
+[2025.06.03-07.02.23:458][609]NetworkingProfiler: Shutdown
+[2025.06.03-07.02.23:458][609]LoadingProfiler: Shutdown
+[2025.06.03-07.02.23:458][609]TimingProfiler: Shutdown
+[2025.06.03-07.02.23:638][609]LogOpenImageDenoise: OIDN shutting down
+[2025.06.03-07.02.23:935][609]LogHttp: Warning: [FHttpManager::Shutdown] Unbinding delegates for 1 outstanding Http Requests:
+[2025.06.03-07.02.23:935][609]LogHttp: Warning: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BB939AD94-43B1-BF07-98F0-76B1948CFC15%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.4.4-35576357%2B%2B%2BUE5%2BRelease-5.4&UserID=151beebb43abfc4798110fb030a4338a%7C2aada0dfb700438cb8f79252af6c4018%7C8e12237f-b20d-41ef-9c00-004baa3254ac&AppEnvironment=datacollector-binary&UploadType=eteventstream] refs=[2] status=Processing
+[2025.06.03-07.02.25:521][609]LogEOSSDK: FEOSSDKManager::Shutdown EOS_Shutdown Result=[EOS_Success]
+[2025.06.03-07.02.25:521][609]LogStudioTelemetry: Display: Shutdown StudioTelemetry Module
+[2025.06.03-07.02.25:522][609]RenderDocPlugin: plugin has been unloaded.
+[2025.06.03-07.02.25:527][609]LogXGEController: Cleaning working directory: C:/Users/NACI1405/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2025.06.03-07.02.25:531][609]LogPakFile: Destroying PakPlatformFile
+[2025.06.03-07.02.25:616][609]LogD3D12RHI: ~FD3D12DynamicRHI
+[2025.06.03-07.02.25:631][609]LogExit: Exiting.
+[2025.06.03-07.02.25:650][609]Log file closed, 06/03/25 09:02:25
