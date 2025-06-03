@@ -47,6 +47,7 @@ void AChallengeOfJade::ChallengeFailed()
 
 void AChallengeOfJade::Init()
 {
+	PRINT_MSG("Init");
 	if (endZone)
 	{
 		endZone->OnEndZoneReached().AddDynamic(this, &AChallengeOfJade::OnPlayerReachEnd);
@@ -136,6 +137,7 @@ void AChallengeOfJade::OnPlayerReachEnd(AActor* _overlappedActor)
 
 void AChallengeOfJade::NotifyActorBeginOverlap(AActor* OtherActor)
 {
+	PRINT_MSG("NotifyActorBeginOverlap");
 	if (raceStarted || raceCompleted || !isPlayerDashing)return;
 	if (!OtherActor)return;
 	ACharacter* _player = Cast< ACharacter>(OtherActor);
