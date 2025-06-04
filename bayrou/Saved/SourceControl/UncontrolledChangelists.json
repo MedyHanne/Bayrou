@@ -5,6 +5,9 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"E:/P2Medy/Unreal/GitHubBayrou/Bayrou/bayrou/Content/ThirdPerson/Input/IMC_Default.uasset",
+				"E:/P2Medy/Unreal/GitHubBayrou/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_MedyThirdPersonCharacter.uasset",
+				"E:/P2Medy/Unreal/GitHubBayrou/Bayrou/bayrou/Content/BP/Component/3C_JumpComponent.uasset",
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_NEWThirdPersonCharacterRaph.uasset",
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/Level/LVL_Raph.umap",
 				"D:/Josua/ExoJosua/Bayrou/bayrou/Content/BP/GPE/New/BP_NewConfusiusRetreat.uasset",
