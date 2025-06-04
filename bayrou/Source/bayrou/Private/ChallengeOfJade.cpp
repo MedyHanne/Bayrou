@@ -70,12 +70,12 @@ void AChallengeOfJade::Init()
 
 	if (!winPopupWidget)
 	{
-		FTimerHandle _timer;
+		/*FTimerHandle _timer;
 		GetWorld()->GetTimerManager().SetTimer(_timer, [&]()
 			{
 				winPopupWidget = GetMainWidget()->GetWinPopupWidget();
 			},
-			0.2f, false);
+			0.2f, false);*/
 	}
 }
 
