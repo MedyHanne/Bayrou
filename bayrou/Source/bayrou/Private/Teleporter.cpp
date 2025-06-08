@@ -3,6 +3,7 @@
 #include <Components/BoxComponent.h>
 #include <Kismet/GameplayStatics.h>
 #include "Kismet/KismetSystemLibrary.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 ATeleporter::ATeleporter()
 {
@@ -32,6 +33,8 @@ void ATeleporter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Ot
             FVector _targetLocation = target->GetActorLocation();
             FRotator _targetRotation = target->GetActorRotation();
             characterRef->SetActorLocationAndRotation(_targetLocation, _targetRotation);
+            UCharacterMovementComponent* _move = characterRef->GetCharacterMovement();
+            if (_move)_move->Velocity = FVector(0);
             //isActivated = false;
         }
     }
