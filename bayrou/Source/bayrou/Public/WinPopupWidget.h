@@ -19,6 +19,6 @@ protected:
 	virtual void NativeConstruct() override;
 
 public:
-	void SetWinImage(UImage* _image);
+	UFUNCTION(BlueprintCallable)void SetWinImage(UImage* _image);
 	
 };
