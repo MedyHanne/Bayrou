@@ -42,37 +42,37 @@ void AEndZone::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	isActive ? mesh->SetVisibility(true) : mesh->SetVisibility(false);
+	//isActive ? mesh->SetVisibility(true) : mesh->SetVisibility(false);
 
-	if (arrow)
-		isActive ? arrow->SetArrowVisibility(true) : arrow->SetArrowVisibility(false);
+	//if (arrow)
+	//	isActive ? arrow->SetArrowVisibility(true) : arrow->SetArrowVisibility(false);
 
-	if (beaconLight)
-	{
-		beaconLight->SetVisibility(isActive);
-		if (isActive)
-		{
-			if (challenge && challenge->GetRaceStarted())
-			{
-				float timeLeft = challenge->GetTimeLimit() - challenge->GetCurrentTime();
-				if (timeLeft <= blinkingStartTime)
-				{
-					blinkTimer += DeltaTime;
-					if (blinkTimer >= 0.5f)
-					{
-						blinkTimer = 0.0f;
-						blinkState = !blinkState;
-						beaconLight->SetVisibility(blinkState);
-						mesh->SetVisibility(blinkState);
-					}
-				}
-				else
-				{
-					beaconLight->SetVisibility(true);
-				}
-			}
-		}
-	}
+	//if (beaconLight)
+	//{
+	//	beaconLight->SetVisibility(isActive);
+	//	if (isActive)
+	//	{
+	//		if (challenge && challenge->GetRaceStarted())
+	//		{
+	//			float timeLeft = challenge->GetTimeLimit() - challenge->GetCurrentTime();
+	//			if (timeLeft <= blinkingStartTime)
+	//			{
+	//				blinkTimer += DeltaTime;
+	//				if (blinkTimer >= 0.5f)
+	//				{
+	//					blinkTimer = 0.0f;
+	//					blinkState = !blinkState;
+	//					beaconLight->SetVisibility(blinkState);
+	//					mesh->SetVisibility(blinkState);
+	//				}
+	//			}
+	//			else
+	//			{
+	//				beaconLight->SetVisibility(true);
+	//			}
+	//		}
+	//	}
+	//}
 
 }
 

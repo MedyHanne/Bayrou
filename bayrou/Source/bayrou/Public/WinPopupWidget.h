@@ -3,6 +3,7 @@
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
 #include <Components/Image.h>
+// #include "Components/Button.h"
 #include "WinPopupWidget.generated.h"
 
 
@@ -11,6 +12,7 @@ class BAYROU_API UWinPopupWidget : public UUserWidget
 {
 	GENERATED_BODY()
 	UPROPERTY(EditAnywhere, meta = (BindWidget)) TObjectPtr<UImage> winImage;
+	
 
 public:
 	FORCEINLINE TObjectPtr<UImage> GetWinImage() { return winImage; }
