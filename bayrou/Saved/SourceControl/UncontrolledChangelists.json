@@ -5,6 +5,9 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"D:/ProjetUnreal/Bayrou/bayrou/Content/BP/GPE/New/BP_NewSpiritualNode.uasset",
+				"D:/ProjetUnreal/Bayrou/bayrou/Content/Level/LVL_CrashTest.umap",
+				"D:/ProjetUnreal/Bayrou/bayrou/Content/BP/GPE/New/BP_NewSpiritualArtefact.uasset",
 				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/Level/LVL_CrashTest.umap",
 				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
 				"D:/Bouquet Nicolas/Project/unreal/BahiuPreProdTest/Bayrou/bayrou/Content/ThirdPerson/Blueprints/BP_NicolasThirdPersonCharacter.uasset",
