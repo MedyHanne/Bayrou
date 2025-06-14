@@ -35,6 +35,7 @@ void ATeleporter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Ot
             characterRef->SetActorLocationAndRotation(_targetLocation, _targetRotation);
             UCharacterMovementComponent* _move = characterRef->GetCharacterMovement();
             if (_move)_move->Velocity = FVector(0);
+            onActivate.Broadcast();
             //isActivated = false;
         }
     }

@@ -10,6 +10,9 @@ UCLASS()
 class BAYROU_API ATeleporter : public AActor
 {
 	GENERATED_BODY()
+protected:
+    DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnActivate);
+    UPROPERTY(BlueprintAssignable, BlueprintType) FOnActivate onActivate;
 public:
     UPROPERTY(EditAnywhere) TObjectPtr<AActor> target;
     UPROPERTY(EditAnywhere, BlueprintReadWrite) bool isActivated = true;
@@ -18,6 +21,7 @@ public:
 public:
     FORCEINLINE bool IsActivated() { return isActivated; }
     FORCEINLINE void SetIsActivated(bool _value) { isActivated = _value; }
+    FORCEINLINE FOnActivate& OnActivate() { return onActivate; }
 
 public:
     ATeleporter();
